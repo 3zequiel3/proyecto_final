@@ -26,5 +26,5 @@ form.addEventListener("submit", (e: SubmitEvent) => {
   const parseUser = JSON.stringify(user);
   localStorage.setItem("userData", parseUser);
 
-  navigate("/src/pages/client/home/home.html");
+  navigate("/src/pages/store/home/home.html");
 });
