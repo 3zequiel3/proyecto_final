@@ -1,6 +1,6 @@
 import type { IUser } from "../../../types/IUser";
 import type { Rol } from "../../../types/Rol";
-import { navigate } from "../../../utils/navigate";
+import { navigate } from "../../../utils/navigate"; 
 
 const form = document.getElementById("form") as HTMLFormElement;
 const inputEmail = document.getElementById("email") as HTMLInputElement;
@@ -23,8 +23,10 @@ form.addEventListener("submit", (e: SubmitEvent) => {
     email: valueEmail,
     role: valueRol,
     loggedIn: true,
+    id: 1,
   };
 
   const parseUser = JSON.stringify(user);
   localStorage.setItem("userData", parseUser);
+  
 });
