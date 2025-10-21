@@ -14,7 +14,7 @@ form.addEventListener("submit", (e: SubmitEvent) => {
   const valueRol = selectRol.value as Rol;
 
   if (valueRol === "admin") {
-    navigate("/src/pages/admin/home/home.html");
+    navigate("/src/admin/home/home.html");
   } else if (valueRol === "client") {
     navigate("/src/pages/store/home/home.html");
   }
@@ -30,3 +30,4 @@ form.addEventListener("submit", (e: SubmitEvent) => {
   localStorage.setItem("userData", parseUser);
   
 });
+ 
