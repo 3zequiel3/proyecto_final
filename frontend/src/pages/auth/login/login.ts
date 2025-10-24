@@ -31,3 +31,16 @@ form.addEventListener("submit", (e: SubmitEvent) => {
   
 });
  
+console.log("Login page loaded");
+
+const traerDatos = async () => {
+  const response = await fetch("http://localhost:5020/cliente");
+  const data = await response.json();
+  console.log(data);
+
+
+
+
+}
+
+traerDatos();
